@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 3 desarrollo web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="div-menu">
+            <div class="div-logo">
+                <figure>
+                    <img width="250px" src="img/logo.PNG" alt="img/logo.PNG">
+                </figure>
+            </div>
+            <div class="div-navegador">
+                <nav>
+                    <!-- En esta zona de la pagina va  la navegacion -->
+                    <button class="nav-menu" onclick="despliega()">MENU</button>
+                    <a href="#" class="nav-enlace desaparace"> INICIO</a>
+                    <a href="#"class="nav-enlace desaparace">CONOCENOS</a>
+                    <a href="#"class="nav-enlace desaparace">SERVICIOS</a>
+                    <a href="#"class="nav-enlace desaparace">VIAJE SESUROS</a>
+                    <a href="#"class="nav-enlace desaparace">CONTACTENOS</a>
+                    <a href="#"class="nav-enlace desaparace">COVID 19</a>
+                </nav>
+            </div>
+            <div class="div-login">
+                aqui va el login
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="flex">AQUI VAN LOS MODULOS</div>
+    <section>
+        
+        
+        <div class="columna">
+            <!-- en esta parte superior ira una imagen demostrativa -->
+
+            <h2>SERVICIOS</h2>
+            <p class="info">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Ducimus fugiat
+                praesentium dolorem quae, odit temporibus!
+                Totam quis perspiciatis ea repudiandae. 
+                Eius laudantium culpa nulla rerum sit 
+                doloremque delectus architecto tempore.
+            </p>
+            <a href="#" class="masInfo">MAS INFORMACION </a>
+        </div>
+        <div class="columna">
+            <!-- en esta parte superior ira una imagen demostrativa -->
+
+            <h2>EMPLEADOS</h2>
+            <p class="info">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Ducimus fugiat
+                praesentium dolorem quae, odit temporibus!
+                Totam quis perspiciatis ea repudiandae. 
+                Eius laudantium culpa nulla rerum sit 
+                doloremque delectus architecto tempore.
+            </p>
+            <a href="#" class="masInfo">MAS INFORMACION </a>
+        </div>
+        <div class="columna">
+            <!-- en esta parte superior ira una imagen demostrativa -->
+
+            <h2>ENVIOS</h2>
+            <p class="info">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Ducimus fugiat
+                praesentium dolorem quae, odit temporibus!
+                Totam quis perspiciatis ea repudiandae. 
+                Eius laudantium culpa nulla rerum sit 
+                doloremque delectus architecto tempore.
+            </p>
+            <a href="#" class="masInfo">MAS INFORMACION </a>
+        </div>
+        <div class="columna">
+            <!-- en esta parte superior ira una imagen demostrativa -->
+
+            <h2>EXTRAS</h2>
+            <p class="info">
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Ducimus fugiat
+                praesentium dolorem quae, odit temporibus!
+                Totam quis perspiciatis ea repudiandae. 
+                Eius laudantium culpa nulla rerum sit 
+                doloremque delectus architecto tempore.
+            </p>
+            <a href="#" class="masInfo">MAS INFORMACION </a>
+        </div>
+        
+         
+    </section>
+
+    <article></article>
+    <aside></aside>
+    <footer>CONTACTO</footer>
+
+    <script>
+        function despliega(){
+            console.log('entra a la funcion')
+            var enlace = document.getElementsByClassName('nav-enlace');/* toma las variables de clase nav enlace */
+            for (var i = 0; i< enlace.length; i++){
+                enlace[i].classList.toggle('desaparace');
+            }
+        }
+    </script>
+</body>
+</html>
